@@ -4,7 +4,8 @@
 
 Rust is a modern language aimed at both Systems programming and high performance areas. It doesn't use GC unlike other modern languages, and has safety, security and performance guarantees inbuilt.
 As such it is gaining traction, and is fast becoming a viable alternative to embedded systems programming, with modern features. Below are some useful links for learning Rust:
-Article about Rust use case in automotive: <https://medium.com/@sojan.james/the-case-for-using-rust-for-automotive-software-19400779f126>
+[Article about Rust use case in automotive](https://medium.com/@sojan.james/the-case-for-using-rust-for-automotive-software-19400779f126)
+[A page listing all interesting applications of Rust](https://robotics.rs/¶)
 
 1. <https://github.com/nrc/r4cppp>
 
@@ -71,6 +72,7 @@ and neat way if designed rightly. Taken from [Hoverbear's blog](https://hoverbea
 11. As many errors as possible should be at compile time.
 
 The below links provide various explorations done by different people with above requirements in mind (and probably relaxing some of them for flexibility), which lead to different design possibilities:
+
 1. [https://refactoring.guru/design-patterns/state/rust/example]
 2. [https://hoverbear.org/blog/rust-state-machine-pattern/]
 3. [https://blog.yoshuawuyts.com/state-machines-2/]
@@ -79,4 +81,38 @@ The below links provide various explorations done by different people with above
 6. [https://deislabs.io/posts/a-fistful-of-states/]
 7. [https://medium.com/@danny.moghnie/a-simple-state-machine-library-in-rust-2b4f810ec61d]
 
+## Work towards getting Rust qualify for ASIL-D
 
+1. [https://ferrous-systems.com/blog/ferrocene-language-specification/]
+2. [https://ferrous-systems.com/ferrocene/]
+
+## Rust compiler development guidelines
+
+This is a useful reference to understand how the community works to develop future versions of Rust: [https://rustc-dev-guide.rust-lang.org/getting-started.html]
+
+## Some of the most useful Rust libraries
+
+<https://jondot.medium.com/12-killer-rust-libraries-you-should-know-c60bab07624f>
+
+## Experimenting with compiler flags for binary size vs speed
+
+1. [https://stackoverflow.com/questions/68327937/how-to-optimize-the-size-of-the-executable-binary-file-for-native-and-wasm-toolc]
+2. [https://github.com/johnthagen/min-sized-rust#build-in-release-mode]
+3. [https://doc.rust-lang.org/cargo/reference/unstable.html#build-std]
+4. [https://github.com/RazrFalcon/cargo-bloat]
+
+## Parallel programming
+
+1. <https://blog.logrocket.com/implementing-data-parallelism-rayon-rust/>
+
+## Rust FFI
+
+1. Some stack-overflow pages concerning passing structs to C/C++ from Rust:
+    a. <https://stackoverflow.com/questions/64439168/how-can-i-safely-share-objects-between-rust-and-c>
+    b. <https://stackoverflow.com/questions/58311426/how-do-i-use-cbindgen-to-return-and-free-a-boxvec>
+    c. <https://stackoverflow.com/questions/62338832/how-to-hold-rust-objects-in-rust-code-created-through-c>
+2. [CBindgen library which generates C/C++ headers based on Rust](https://docs.rs/cbindgen/latest/cbindgen/fn.generate.html)
+    a. [A simple example](https://github.com/JoshuaBatty/cbindgen_simple_example/blob/master/build.rs)
+3. [Box::from_raw, Box::into_raw which can be used to pass objects to C++ and have them destroyed in Rust](https://doc.rust-lang.org/beta/std/boxed/index.html#memory-layout)
+4. [A detailed walkthrough of Rust FFI, with a sample implementation of Plugin System as well](https://michael-f-bryan.github.io/rust-ffi-guide/overview.html)
+5. <https://github.com/mozilla/cbindgen>
