@@ -1,5 +1,3 @@
-# rust_explorations
-
 # Rust
 
 Rust is a modern language aimed at both Systems programming and high performance areas. It doesn't use GC unlike other modern languages, and has safety, security and performance guarantees inbuilt.
@@ -143,3 +141,10 @@ This is a useful reference to understand how the community works to develop futu
 1. [https://rust-gpu.github.io/Rust-CUDA/index.html]
 2. [https://github.com/EmbarkStudios/rust-gpu]
 3. [https://embarkstudios.github.io/rust-gpu/book/]
+
+## Rust scripts
+
+[rust-script](https://rust-script.org/) is an interesting project, which supports running rust code as a script. [This](https://www.niccoloforlini.com/flawless-scripting-with-rust/) blog explores this aspect further about possibilities.
+
+1. [https://www.kurtlawrence.info/blog/gufdjkjkq7wphfhkvrumcvmqdr4r69]
+2. [https://docs.rs/crate/rust-script/latest]
