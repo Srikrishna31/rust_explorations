@@ -109,15 +109,19 @@ This is a useful reference to understand how the community works to develop futu
 
 1. Some stack-overflow pages concerning passing structs to C/C++ from Rust:
 
-    a. <https://stackoverflow.com/questions/64439168/how-can-i-safely-share-objects-between-rust-and-c>
-    b. <https://stackoverflow.com/questions/58311426/how-do-i-use-cbindgen-to-return-and-free-a-boxvec>
-    c. <https://stackoverflow.com/questions/62338832/how-to-hold-rust-objects-in-rust-code-created-through-c>
+    a. [https://stackoverflow.com/questions/64439168/how-can-i-safely-share-objects-between-rust-and-c]
+    b. [https://stackoverflow.com/questions/58311426/how-do-i-use-cbindgen-to-return-and-free-a-boxvec]
+    c. [https://stackoverflow.com/questions/62338832/how-to-hold-rust-objects-in-rust-code-created-through-c]
+
 2. [CBindgen library which generates C/C++ headers based on Rust](https://docs.rs/cbindgen/latest/cbindgen/fn.generate.html)
 
     a. [A simple example](https://github.com/JoshuaBatty/cbindgen_simple_example/blob/master/build.rs)
+
 3. [Box::from_raw, Box::into_raw which can be used to pass objects to C++ and have them destroyed in Rust](https://doc.rust-lang.org/beta/std/boxed/index.html#memory-layout)
+
 4. [A detailed walkthrough of Rust FFI, with a sample implementation of Plugin System as well](https://michael-f-bryan.github.io/rust-ffi-guide/overview.html)
-5. <https://github.com/mozilla/cbindgen>
+
+5. [https://github.com/mozilla/cbindgen]
 
 ## Bazel with Rust
 
